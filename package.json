@@ -1,0 +1,23 @@
+{
+  "name": "lametric-hue-temperature",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=env",
+    "start": "nodemon --exec npm run babel-node -- ./app/app.js",
+    "build": "babel app -d dist"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "nodemon": "1.17.3"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
