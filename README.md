@@ -13,13 +13,11 @@ Node and npm. **Cron** is used for scheduled execution (steps 4-5).
 
 2. Go to https://developer.lametric.com/applications/create and create a LaMetric **Indicator App** with **Push** communication and publish it as a **private app**. Now you should have your `LAMETRIC_ACCESS_TOKEN` and `LAMETRIC_PUSH_URL`
 
-3. Clone this repository and run **npm install** and **npm run build**.
+3. Clone this repository and execute **npm install** and **npm run build**.
 
 4. (**cron required**) make a copy of **lametric-hue-temperature.cron.sh** and place it in your home directory. Edit the **copied** file and replace all placeholders with the information gathered from previous steps.
 
-5. (**cron required**) Schedule script to run as a cron job by executing `crontab -e` and add the following at the end of the file:
-  ```*/5 * * * * /home/<username>/lametric-hue-temperature.cron.sh```
-  This will make the script execute every 5 minutes
+5. (**cron required**) Schedule script to run as a cron job by executing `crontab -e` and add the following at the end of the file ```*/5 * * * * /home/<username>/lametric-hue-temperature.cron.sh```. This will make the script execute every 5 minutes
 
 ### Development
 
