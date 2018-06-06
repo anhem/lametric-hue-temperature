@@ -4,5 +4,5 @@ import laMetricService from "./laMetricService";
 hueService.getTemperatures().then(response => {
     laMetricService.pushTemperatureData(response);
 }, error => {
-    laMetricService.createError(error);
+    laMetricService.createErrorMessage(error);
 });

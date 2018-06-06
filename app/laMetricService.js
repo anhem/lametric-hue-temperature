@@ -1,7 +1,7 @@
 import restClient from "./restClient";
 
 const TEMPERATURE_ICON = '2056';
-const MESSAGE_DURATION = 5000;
+const MESSAGE_DURATION = 4000;
 const ERROR_MESSAGE_DURATION = 15000;
 const LAMETRIC_ACCESS_TOKEN = process.env.LAMETRIC_ACCESS_TOKEN;
 const LAMETRIC_PUSH_URL = process.env.LAMETRIC_PUSH_URL;
@@ -47,7 +47,7 @@ laMetricService.createTemperatureMessage = (temperatureData) => {
     return response;
 };
 
-laMetricService.createError = (errorMessage) => {
+laMetricService.createErrorMessage = errorMessage => {
     const response = {
         frames: [
             {
