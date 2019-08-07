@@ -7,7 +7,7 @@ Example: https://www.youtube.com/watch?v=sHBgSr0JU6g
 ### Requirements
 A server running on your local network, Node and npm.
 
-The application is written to be executed on regular intervals, for example as a scheduled **cron-job**.
+The application is written to be executed at regular intervals, for example as a scheduled **cron-job**.
 I.e. it will shutdown once it has completed its task, and needs to be started again for the temperature data to be updated.
 
 ### Setup
