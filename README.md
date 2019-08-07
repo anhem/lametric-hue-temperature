@@ -17,7 +17,7 @@ I.e. it will shutdown once it has completed its task, and needs to be started ag
 1. `HUE_API_KEY`- Go to http://<HUE_BRIDGE_IP>/debug/clip.html and fill in `/api` in the URL and 
 `{"devicetype":"lametric-hue-temp#server"}` in the message body. **Before proceeding**, go and press the physical button 
 on your Philips Hue Bridge. After that you can click on the **post** button. It should look like 
-[this](https://www.developers.meethue.com/sites/default/files/SuccessResponse.png) if successful. The `username` is your `HUE_API_KEY`.
+[this](https://developers.meethue.com/wp-content/uploads/2018/02/SuccessResponse-1.png) if successful. The `username` is your `HUE_API_KEY`.
 
 1. `LAMETRIC_ACCESS_TOKEN` & `LAMETRIC_PUSH_URL` - Go to https://developer.lametric.com/applications/create and create a 
     LaMetric **Indicator App** with **Push** communication and publish it as a **private app**. Now you should have your 
