@@ -17,7 +17,7 @@ function addSensorName(temperatureSensors, sensors) {
     return temperatureSensors.map(temperatureSensor => {
         const sensorId = parseInt(temperatureSensor[0]);
         const siblingSensor = sensors[sensorId + 1];
-        temperatureSensor[1]['sname'] = siblingSensor.name;
+        temperatureSensor[1]['sname'] = (siblingSensor && siblingSensor.name) || `S${temperatureSensor[1].name.slice(-1)}`;
         return temperatureSensor;
     });
 }
