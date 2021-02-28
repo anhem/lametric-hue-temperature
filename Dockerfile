@@ -23,5 +23,3 @@ COPY --from=builder /build/node_modules/ ./node_modules
 
 CMD node /opt/lametric-hue-temperature/dist/app.js
 
-EXPOSE 3000
-
