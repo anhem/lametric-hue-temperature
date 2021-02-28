@@ -1,0 +1,10 @@
+# project
+.git
+.idea
+.gitignore
+Dockerfile
+README.md
+
+# frontend
+node_modules
+dist
