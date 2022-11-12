@@ -45,7 +45,8 @@ function getAverageTemperature(): Promise<Temperature[]> {
         const sum = temperatures.reduce((acc, temperature) => {
             return acc + temperature.temperature;
         }, 0);
-        const average = Math.round(((sum / temperatures.length) + Number.EPSILON) * 100) / 100
+
+        const average = roundTemperatureToOneDecimal(sum / temperatures.length)
         return [{
             name: "Average",
             shortName: "~",
@@ -76,10 +77,14 @@ function toTemperature(hueDevices: HueDevice[], hueTemperature: HueTemperatureSe
     return hueDevice ? {
         name: hueDevice.metadata.name,
         shortName: hueDevice.metadata.name.slice(0, 2),
-        temperature: hueTemperature.temperature.temperature
+        temperature: roundTemperatureToOneDecimal(hueTemperature.temperature.temperature)
     } : {
         name: hueTemperature.id,
         shortName: hueTemperature.id.slice(0, 2),
-        temperature: hueTemperature.temperature.temperature
+        temperature: roundTemperatureToOneDecimal(hueTemperature.temperature.temperature)
     }
+}
+
+function roundTemperatureToOneDecimal(temperature: number) {
+    return Math.round(temperature * 10) / 10
 }
