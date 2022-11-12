@@ -8,7 +8,7 @@ const HEADERS = {
     'hue-application-key': process.env.HUE_API_KEY,
     'Cache-Control': 'no-cache'
 };
-const BASE_URL = `https://${(process.env.HUE_BRIDGE_IP)}`;
+const BASE_URL = `https://${process.env.HUE_BRIDGE_IP}`;
 const TEMPERATURE_SENSORS_GET_URL = `${BASE_URL}/clip/v2/resource/temperature`
 const DEVICES_GET_URL = `${BASE_URL}/clip/v2/resource/device`
 
