@@ -30,7 +30,7 @@ Here is a list of variables needed, and how to get them:
    LaMetric **Indicator App** with **Push** communication and publish it as a **private app**. Now you should have your
    `LAMETRIC_ACCESS_TOKEN` and `LAMETRIC_PUSH_URL`
 
-#### Docker
+#### Alternative 1: Docker 
 
 1. Clone this repository and run `docker build -t hue-temperature .`
 
@@ -47,7 +47,7 @@ Here is a list of variables needed, and how to get them:
 3. Schedule the docker container to run as a cron job by executing `crontab -e` and add the following at the end of the
    file ```*/5 * * * * docker start hue-temperature```. This will run the docker container every 5 minutes
 
-#### Node + npm
+#### Alternative 2: Node + npm
 
 1. Clone this repository and run **npm install** and **npm run build** from your terminal. A new folder called `dist`
    should have been created with some .js files in it.
@@ -74,6 +74,12 @@ Here is a list of variables needed, and how to get them:
    file ```*/5 * * * * /home/<username>/lametric-hue-temperature.cron.sh```. This will make the script execute every 5
    minutes
 
+## Troubleshooting
+
+Older Hue Bridges may be using a self-signed certificate that prevents this application from getting temperatures. 
+This can be solved by downloading the PEM file from the hue bridge and setting this environment variable `NODE_EXTRA_CA_CERTS=<path to PEM file>`
+As an alternative, but not recommended way, of solving this issue is to set the following environment variable `NODE_TLS_REJECT_UNAUTHORIZED='0'`
+
 ### Development
 
-use `npm start` to start in development mode
+use `HUE_BRIDGE_IP=<ip> HUE_API_KEY='<apikey>' LAMETRIC_PUSH_URL=<url> npm start` to start in development mode

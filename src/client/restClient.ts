@@ -1,7 +1,5 @@
 import 'isomorphic-fetch'
 
-const restClient = {};
-
 const resolveResponse = (response) => {
     const contentType = response.headers.get("content-type");
     if (contentType && contentType.indexOf("application/json") !== -1) {
@@ -20,24 +18,23 @@ const resolveResponse = (response) => {
             return Promise.resolve(text);
         }
     });
-
 };
 
-restClient.get = (url) => {
-    return fetch(url)
-        .then(response => {
-            return resolveResponse(response);
-        });
-};
-
-restClient.post = (url, headers, body) => {
+export const get = (url, headers) => {
     return fetch(url, {
-        method: 'post',
+        method: 'GET',
+        headers: headers,
+    }).then(response => {
+        return resolveResponse(response);
+    });
+};
+
+export const post = (url, headers, body) => {
+    return fetch(url, {
+        method: 'POST',
         headers: headers,
         body: JSON.stringify(body)
     }).then(response => {
         return resolveResponse(response);
     });
 };
-
-export default restClient
