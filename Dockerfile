@@ -1,21 +1,11 @@
-FROM ubuntu:20.04 as builder
-
-ENV DEBIAN_FRONTEND noninteractive
-
-RUN apt-get update && \
-    apt-get install -y npm && \
-    apt-get clean
+FROM node:lts-alpine3.16 as builder
 
 WORKDIR /build
 COPY . .
 RUN npm install
 RUN npm run build
 
-FROM ubuntu:20.04 as runtime
-
-RUN apt-get update && \
-    apt-get install -y nodejs && \
-    apt-get clean
+FROM node:lts-alpine3.16 as runtime
 
 WORKDIR /opt/lametric-hue-temperature
 COPY --from=builder /build/dist/ ./dist

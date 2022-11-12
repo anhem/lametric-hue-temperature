@@ -76,7 +76,7 @@ Here is a list of variables needed, and how to get them:
 
 ## Troubleshooting
 
-Older Hue Bridges may be using a self-signed certificate that prevents this application from getting temperatures. 
+Older Hue Bridges may be using a self-signed certificate that prevents this application from getting data. 
 This can be solved by downloading the PEM file from the hue bridge and setting this environment variable `NODE_EXTRA_CA_CERTS=<path to PEM file>`
 As an alternative, but not recommended way, of solving this issue is to set the following environment variable `NODE_TLS_REJECT_UNAUTHORIZED='0'`
 
