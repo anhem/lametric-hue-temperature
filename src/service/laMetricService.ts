@@ -8,11 +8,11 @@ const MESSAGE_DURATION = 4000;
 const ERROR_MESSAGE_DURATION = 15000;
 
 export function sendTemperature(temperatures: Temperature[]) {
-    sendFrames(createTemperatureMessage(temperatures))
+    return sendFrames(createTemperatureMessage(temperatures))
 }
 
 export function sendErrorMessage(errorMessage: string) {
-    sendFrames(createErrorMessage(errorMessage))
+    return sendFrames(createErrorMessage(errorMessage))
 }
 
 function createTemperatureMessage(temperatures: Temperature[]): LaMetricFrames {

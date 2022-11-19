@@ -11,5 +11,5 @@ WORKDIR /opt/lametric-hue-temperature
 COPY --from=builder /build/dist/ ./dist
 COPY --from=builder /build/node_modules/ ./node_modules
 
-CMD node /opt/lametric-hue-temperature/dist/app.js
+CMD node /opt/lametric-hue-temperature/dist/src/app.js
 

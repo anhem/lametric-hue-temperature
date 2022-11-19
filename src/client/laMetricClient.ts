@@ -10,8 +10,8 @@ const HEADERS = {
     'Cache-Control': 'no-cache'
 };
 
-export function sendFrames(laMetricFrames: LaMetricFrames) {
-    post(LAMETRIC_PUSH_URL, HEADERS, laMetricFrames).then(() => {
+export function sendFrames(laMetricFrames: LaMetricFrames): Promise<any> {
+    return post(LAMETRIC_PUSH_URL, HEADERS, laMetricFrames).then(() => {
         console.debug("Sent frames to laMetric")
     }, error => {
         console.log("Error while sending frames to laMetric: " + JSON.stringify(error))

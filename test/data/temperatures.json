@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": "temperature-1",
+      "id_v1": "/sensors/11",
+      "owner": {
+        "rid": "owner-1",
+        "rtype": "device"
+      },
+      "enabled": true,
+      "temperature": {
+        "temperature": 19.55,
+        "temperature_valid": true
+      },
+      "type": "temperature"
+    },
+    {
+      "id": "temperature-2",
+      "id_v1": "/sensors/22",
+      "owner": {
+        "rid": "owner-2",
+        "rtype": "device"
+      },
+      "enabled": true,
+      "temperature": {
+        "temperature": 19.62,
+        "temperature_valid": true
+      },
+      "type": "temperature"
+    },
+    {
+      "id": "temperature-3",
+      "id_v1": "/sensors/33",
+      "owner": {
+        "rid": "owner-3",
+        "rtype": "device"
+      },
+      "enabled": true,
+      "temperature": {
+        "temperature": 19.52,
+        "temperature_valid": true
+      },
+      "type": "temperature"
+    },
+    {
+      "id": "temperature-4",
+      "id_v1": "/sensors/44",
+      "owner": {
+        "rid": "owner-4",
+        "rtype": "device"
+      },
+      "enabled": true,
+      "temperature": {
+        "temperature": 20.65,
+        "temperature_valid": true
+      },
+      "type": "temperature"
+    },
+    {
+      "id": "temperature-5",
+      "id_v1": "/sensors/55",
+      "owner": {
+        "rid": "owner-5",
+        "rtype": "device"
+      },
+      "enabled": true,
+      "temperature": {
+        "temperature": 20.05,
+        "temperature_valid": true
+      },
+      "type": "temperature"
+    }
+  ]
+}

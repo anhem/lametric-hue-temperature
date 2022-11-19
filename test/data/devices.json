@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "id": "owner-1",
+      "id_v1": "/sensors/11",
+      "product_data": {
+        "model_id": "SML001",
+        "manufacturer_name": "Signify Netherlands B.V.",
+        "product_name": "Hue motion sensor",
+        "product_archetype": "unknown_archetype",
+        "certified": true,
+        "software_version": "1.1.27575",
+        "hardware_platform_type": "100b-10d"
+      },
+      "metadata": {
+        "name": "Living Room sensor",
+        "archetype": "unknown_archetype"
+      },
+      "identify": {},
+      "services": [
+        {
+          "rid": "temperature-1",
+          "rtype": "temperature"
+        }
+      ],
+      "type": "device"
+    },
+    {
+      "id": "owner-2",
+      "id_v1": "/sensors/22",
+      "product_data": {
+        "model_id": "SML001",
+        "manufacturer_name": "Signify Netherlands B.V.",
+        "product_name": "Hue motion sensor",
+        "product_archetype": "unknown_archetype",
+        "certified": true,
+        "software_version": "1.1.27575",
+        "hardware_platform_type": "100b-10d"
+      },
+      "metadata": {
+        "name": "Hallway sensor",
+        "archetype": "unknown_archetype"
+      },
+      "identify": {},
+      "services": [
+        {
+          "rid": "temperature2",
+          "rtype": "temperature"
+        }
+      ],
+      "type": "device"
+    },
+    {
+      "id": "owner-3",
+      "id_v1": "/sensors/33",
+      "product_data": {
+        "model_id": "SML001",
+        "manufacturer_name": "Signify Netherlands B.V.",
+        "product_name": "Hue motion sensor",
+        "product_archetype": "unknown_archetype",
+        "certified": true,
+        "software_version": "1.1.27575",
+        "hardware_platform_type": "100b-10d"
+      },
+      "metadata": {
+        "name": "Kitchen sensor",
+        "archetype": "unknown_archetype"
+      },
+      "identify": {},
+      "services": [
+        {
+          "rid": "temperature-3",
+          "rtype": "temperature"
+        }
+      ],
+      "type": "device"
+    },
+    {
+      "id": "owner-4",
+      "id_v1": "/sensors/44",
+      "product_data": {
+        "model_id": "SML001",
+        "manufacturer_name": "Signify Netherlands B.V.",
+        "product_name": "Hue motion sensor",
+        "product_archetype": "unknown_archetype",
+        "certified": true,
+        "software_version": "1.1.27575",
+        "hardware_platform_type": "100b-10d"
+      },
+      "metadata": {
+        "name": "Bathroom sensor",
+        "archetype": "unknown_archetype"
+      },
+      "identify": {},
+      "services": [
+        {
+          "rid": "temperature-4",
+          "rtype": "temperature"
+        }
+      ],
+      "type": "device"
+    },
+    {
+      "id": "owner-5",
+      "id_v1": "/sensors/55",
+      "product_data": {
+        "model_id": "SML001",
+        "manufacturer_name": "Signify Netherlands B.V.",
+        "product_name": "Hue motion sensor",
+        "product_archetype": "unknown_archetype",
+        "certified": true,
+        "software_version": "1.1.27575",
+        "hardware_platform_type": "100b-10d"
+      },
+      "metadata": {
+        "name": "Bedroom sensor",
+        "archetype": "unknown_archetype"
+      },
+      "identify": {},
+      "services": [
+        {
+          "rid": "temperature-5",
+          "rtype": "temperature"
+        }
+      ],
+      "type": "device"
+    }
+  ]
+}
