@@ -1,5 +1,5 @@
-import {LaMetricFrame} from "./LaMetricFrame";
+import { LaMetricFrame } from "./LaMetricFrame";
 
 export interface LaMetricFrames {
-    frames: LaMetricFrame[]
+  frames: LaMetricFrame[];
 }

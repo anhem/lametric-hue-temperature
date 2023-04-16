@@ -1,4 +1,4 @@
 export interface HueOwner {
-    rid: string
-    rtype: string
+  rid: string;
+  rtype: string;
 }

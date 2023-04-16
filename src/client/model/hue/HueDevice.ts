@@ -1,6 +1,6 @@
-import {HueMetaData} from "./HueMetaData";
+import { HueMetaData } from "./HueMetaData";
 
 export interface HueDevice {
-    id: string
-    metadata: HueMetaData
+  id: string;
+  metadata: HueMetaData;
 }

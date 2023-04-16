@@ -1,7 +1,7 @@
-import {HueTemperatureSensor} from "./HueTemperatureSensor";
-import {HueDevice} from "./HueDevice";
+import { HueTemperatureSensor } from "./HueTemperatureSensor";
+import { HueDevice } from "./HueDevice";
 
 export interface HueBridgeResponse {
-    errors: object;
-    data: HueTemperatureSensor[] | HueDevice[];
+  errors: object;
+  data: HueTemperatureSensor[] | HueDevice[];
 }

@@ -1,3 +1,3 @@
 export interface HueMetaData {
-    name: string
+  name: string;
 }

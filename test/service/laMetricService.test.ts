@@ -9,7 +9,7 @@ describe('laMetricService', () => {
             {name: 'High', shortName: 'HI', temperature: 20.7},
             {name: 'Low', shortName: 'LO', temperature: 19.5},
         ]
-        const sendFrames = jest.spyOn(laMetricClient, 'sendFrames').mockResolvedValue({})
+        const sendFrames = jest.spyOn(laMetricClient, 'sendFrames').mockResolvedValue()
 
         await sendTemperature(temperatures)
 
@@ -32,7 +32,7 @@ describe('laMetricService', () => {
     });
 
     test('sendErrorMessage', async () => {
-        const sendFrames = jest.spyOn(laMetricClient, 'sendFrames').mockResolvedValue({})
+        const sendFrames = jest.spyOn(laMetricClient, 'sendFrames').mockResolvedValue()
 
         const errorMessage = "error message";
         await sendErrorMessage(errorMessage)
