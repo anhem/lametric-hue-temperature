@@ -17,9 +17,8 @@ export function sendFrames(laMetricFrames: LaMetricFrames): Promise<void> {
       return Promise.resolve();
     })
     .catch((error) => {
-      logger.error(
-        "Error while sending frames to laMetric: " + JSON.stringify(error)
-      );
+      logger.error("Error while sending frames to laMetric:", error);
+
       return Promise.reject(error.message);
     });
 }
